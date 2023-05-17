@@ -19,7 +19,7 @@ endif ()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(${PROJECT_NAME} main.cc RS/Timer.h)
+add_executable(${PROJECT_NAME} main.cc)
 
 set(OpenCV_DIR "E:/develop/opencv/build")
 set(REALSENSE_DIR "C:/Program Files (x86)/Intel RealSense SDK 2.0/")
@@ -50,7 +50,6 @@ aux_source_directory(controllers CTL_SRC)
 aux_source_directory(filters FILTER_SRC)
 aux_source_directory(plugins PLUGIN_SRC)
 aux_source_directory(models MODEL_SRC)
-aux_source_directory(RS RS_SDK_SRC)
 
 
 target_include_directories(${PROJECT_NAME}
@@ -63,7 +62,6 @@ target_sources(${PROJECT_NAME}
         ${FILTER_SRC}
         ${PLUGIN_SRC}
         ${MODEL_SRC}
-        ${RS_SDK_SRC})
-
+        )
 
 add_subdirectory(test)

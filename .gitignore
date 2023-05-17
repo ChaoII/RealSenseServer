@@ -1,13 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 
-
-.idea
-build
 ### C ###
 # Prerequisites
 *.d
-
+config_bake.json
 # Object files
 *.o
 *.ko
